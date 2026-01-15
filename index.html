@@ -1,1 +1,427 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SYSTEM_STATUS: ONLINE // INFRA_ENG</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700;800&family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        mono: ['"JetBrains Mono"', 'monospace'],
+                        display: ['"Syncopate"', 'sans-serif'],
+                    },
+                    colors: {
+                        'cyber-black': '#050505',
+                        'cyber-gray': '#1a1a1a',
+                        'neon-green': '#00ff41',
+                        'neon-pink': '#ff00ff',
+                        'neon-cyan': '#00f3ff',
+                    },
+                    boxShadow: {
+                        'hard': '4px 4px 0px 0px currentColor',
+                        'hard-sm': '2px 2px 0px 0px currentColor',
+                        'hard-lg': '8px 8px 0px 0px currentColor',
+                    },
+                    animation: {
+                        'blink': 'blink 1s step-end infinite',
+                        'glitch': 'glitch 1s linear infinite',
+                    },
+                    keyframes: {
+                        blink: {
+                            '0%, 100%': { opacity: '1' },
+                            '50%': { opacity: '0' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #050505;
+            background-image: 
+                linear-gradient(rgba(0, 255, 65, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0, 255, 65, 0.03) 1px, transparent 1px);
+            background-size: 30px 30px;
+        }
+
+        .cyber-card {
+            background: #0a0a0a;
+            border: 1px solid #333;
+            transition: all 0.2s ease;
+        }
+
+        .cyber-card:hover {
+            border-color: #00ff41;
+            box-shadow: 4px 4px 0px 0px #00ff41;
+            transform: translate(-2px, -2px);
+        }
+
+        .glitch-text:hover {
+            animation: glitch-anim 0.3s infinite;
+            color: #ff00ff;
+        }
+
+        @keyframes glitch-anim {
+            0% { transform: translate(0) }
+            20% { transform: translate(-2px, 2px) }
+            40% { transform: translate(-2px, -2px) }
+            60% { transform: translate(2px, 2px) }
+            80% { transform: translate(2px, -2px) }
+            100% { transform: translate(0) }
+        }
+
+        /* Scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #050505;
+            border-left: 1px solid #333;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #333;
+            border: 1px solid #00ff41;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #00ff41;
+        }
+
+        /* Print Styles */
+        @media print {
+            body { 
+                background: white !important; 
+                color: black !important; 
+                background-image: none !important;
+            }
+            .no-print { display: none !important; }
+            .print-black { color: black !important; }
+            .cyber-card { 
+                border: 1px solid #ccc !important; 
+                box-shadow: none !important; 
+                background: white !important;
+                color: black !important;
+            }
+            * { text-shadow: none !important; }
+            .text-neon-green { color: #000 !important; }
+            .text-neon-cyan { color: #000 !important; }
+            .text-neon-pink { color: #000 !important; }
+            .bg-neon-green\/10 { background: transparent !important; }
+            .border-neon-green { border-color: #000 !important; }
+            a { text-decoration: underline; color: black !important; }
+        }
+    </style>
+</head>
+<body class="text-gray-300 font-mono min-h-screen relative overflow-x-hidden selection:bg-neon-green selection:text-black">
+
+    <!-- Top Status Bar -->
+    <nav class="fixed top-0 w-full z-50 bg-cyber-black/90 backdrop-blur-sm border-b border-white/10 no-print">
+        <div class="max-w-7xl mx-auto px-4 h-12 flex items-center justify-between text-xs tracking-widest">
+            <div class="flex items-center gap-4">
+                <span class="flex items-center gap-2 text-neon-green">
+                    <span class="w-2 h-2 bg-neon-green rounded-full animate-blink"></span>
+                    SYSTEM_ONLINE
+                </span>
+                <span class="text-gray-600 hidden sm:inline">V.2.0.24</span>
+            </div>
+            <div class="flex gap-4">
+                <button onclick="window.print()" class="hover:text-neon-green hover:bg-neon-green/10 px-2 py-1 transition-colors uppercase border border-transparent hover:border-neon-green">
+                    [ DOWNLOAD_LOGS.PDF ]
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-6xl mx-auto px-4 pt-24 pb-20">
+        
+        <!-- Header / Hero -->
+        <header class="mb-20 print:mb-8 grid grid-cols-1 lg:grid-cols-12 gap-8 items-end">
+            <div class="lg:col-span-8">
+                <div class="inline-block px-2 py-1 mb-4 text-xs font-bold tracking-widest text-black bg-neon-green border border-neon-green print:bg-transparent print:text-black print:border-black">
+                    OPEN_FOR_WORK :: TRUE
+                </div>
+                <h1 class="text-5xl md:text-7xl font-display font-bold text-white mb-4 uppercase leading-none tracking-tighter mix-blend-difference glitch-text cursor-default print:text-black">
+                    AJITH_PRASAD
+                </h1>
+                <h2 class="text-xl md:text-2xl text-neon-cyan font-bold tracking-tight print:text-black">
+                    <span class="text-gray-500 mr-2">></span>INFRASTRUCTURE_ENGINEER
+                </h2>
+                <h2 class="text-xl md:text-2xl text-gray-500 font-mono mt-1 print:text-black">
+                    <span class="text-gray-600 mr-2">#</span>VIBE_CODING_SPECIALIST
+                </h2>
+            </div>
+            
+            <!-- Contact Matrix -->
+            <div class="lg:col-span-4 cyber-card p-4 text-sm font-mono print:border-0 print:p-0">
+                <div class="border-b border-white/10 pb-2 mb-2 text-gray-500 text-xs uppercase tracking-widest">Connect_Protocols</div>
+                <div class="flex flex-col gap-2">
+                    <a href="mailto:ajithprasadpv@gmail.com" class="flex justify-between items-center group hover:text-neon-pink transition-colors print:text-black">
+                        <span>EMAIL</span>
+                        <span class="text-gray-500 group-hover:text-neon-pink">> Send_Packet()</span>
+                    </a>
+                    <a href="https://github.com/ajithprasadpv" target="_blank" class="flex justify-between items-center group hover:text-neon-pink transition-colors print:text-black">
+                        <span>GITHUB</span>
+                        <span class="text-gray-500 group-hover:text-neon-pink">> git pull</span>
+                    </a>
+                    <a href="https://x.com/ajithprasad" target="_blank" class="flex justify-between items-center group hover:text-neon-pink transition-colors print:text-black">
+                        <span>X.COM</span>
+                        <span class="text-gray-500 group-hover:text-neon-pink">> Follow()</span>
+                    </a>
+                    <div class="flex justify-between items-center text-gray-500 mt-2 pt-2 border-t border-white/10 print:hidden">
+                        <span>LOC</span>
+                        <span>IN.Bangalore</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Grid Layout -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+            
+            <!-- LEFT COLUMN (Main Content) -->
+            <div class="lg:col-span-8 flex flex-col gap-16 print:gap-8">
+                
+                <!-- About / Terminal Output -->
+                <section>
+                    <div class="flex items-center gap-2 mb-6">
+                        <i class="fas fa-terminal text-neon-green text-sm"></i>
+                        <h3 class="font-bold text-white text-xl uppercase tracking-wider print:text-black">./cat about_me.txt</h3>
+                    </div>
+                    <div class="border-l-2 border-neon-green/30 pl-6 py-2 text-lg leading-relaxed text-gray-300 print:text-black print:border-gray-300">
+                        <p class="mb-4">
+                            <span class="text-neon-green font-bold">root@user:~$</span> Forward-thinking engineer with 1 year of runtime executing robust system architecture.
+                        </p>
+                        <p>
+                            Specializing in the intersection of reliable infrastructure and "Vibe Coding"—leveraging AI-assisted workflows to accelerate Python, HTML, and CSS deployment. My compiler flags are set to maximum efficiency. I automate the boring stuff so you don't have to.
+                        </p>
+                    </div>
+                </section>
+
+                <!-- Experience / System Logs -->
+                <section>
+                    <div class="flex items-center gap-2 mb-8">
+                        <i class="fas fa-history text-neon-cyan text-sm"></i>
+                        <h3 class="font-bold text-white text-xl uppercase tracking-wider print:text-black">./view_logs --experience</h3>
+                    </div>
+                    
+                    <div class="space-y-8">
+                        <!-- Role 1 -->
+                        <div class="cyber-card p-6 relative group print:shadow-none print:border-gray-300">
+                            <div class="absolute top-0 right-0 p-2 opacity-50 text-[10px] text-gray-500 uppercase tracking-widest border-b border-l border-white/10 bg-black/50 print:hidden">
+                                log_id: 2023_current
+                            </div>
+                            
+                            <div class="flex flex-col md:flex-row md:items-baseline justify-between mb-4 border-b border-white/10 pb-4 print:border-gray-300">
+                                <div>
+                                    <h4 class="text-2xl font-bold text-white group-hover:text-neon-green transition-colors print:text-black">Infrastructure Engineer</h4>
+                                    <h5 class="text-gray-400 print:text-gray-700">Tech_Corp_Systems_Ltd</h5>
+                                </div>
+                                <div class="font-mono text-neon-green bg-neon-green/10 px-2 py-1 text-xs mt-2 md:mt-0 print:text-black print:border print:border-gray-300">
+                                    [ 2023 - PRESENT ]
+                                </div>
+                            </div>
+                            
+                            <ul class="space-y-3 text-sm text-gray-400 font-mono print:text-black">
+                                <li class="flex gap-3">
+                                    <span class="text-neon-green">></span>
+                                    <span>Maintained cloud uptime at <span class="text-white bg-white/10 px-1 print:text-black">99.9%</span> via automated health checks.</span>
+                                </li>
+                                <li class="flex gap-3">
+                                    <span class="text-neon-green">></span>
+                                    <span>Scripted routine maintenance in <strong class="text-white print:text-black">Python</strong>, reducing manual ops by 40%.</span>
+                                </li>
+                                <li class="flex gap-3">
+                                    <span class="text-neon-green">></span>
+                                    <span>Refactored legacy CI/CD pipelines for accelerated deployment velocity.</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Role 2 -->
+                        <div class="cyber-card p-6 relative group print:shadow-none print:border-gray-300">
+                            <div class="absolute top-0 right-0 p-2 opacity-50 text-[10px] text-gray-500 uppercase tracking-widest border-b border-l border-white/10 bg-black/50 print:hidden">
+                                log_id: 2022_2023
+                            </div>
+                            
+                            <div class="flex flex-col md:flex-row md:items-baseline justify-between mb-4 border-b border-white/10 pb-4 print:border-gray-300">
+                                <div>
+                                    <h4 class="text-2xl font-bold text-white group-hover:text-neon-cyan transition-colors print:text-black">Junior Developer</h4>
+                                    <h5 class="text-gray-400 print:text-gray-700">Startup_Inc</h5>
+                                </div>
+                                <div class="font-mono text-gray-500 border border-gray-700 px-2 py-1 text-xs mt-2 md:mt-0 print:text-black print:border-gray-300">
+                                    [ 2022 - 2023 ]
+                                </div>
+                            </div>
+                            
+                            <ul class="space-y-3 text-sm text-gray-400 font-mono print:text-black">
+                                <li class="flex gap-3">
+                                    <span class="text-neon-cyan">></span>
+                                    <span>Frontend architecture using HTML5/CSS3.</span>
+                                </li>
+                                <li class="flex gap-3">
+                                    <span class="text-neon-cyan">></span>
+                                    <span>Pioneered "Vibe Coding" methods using AI tools for rapid prototyping.</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Projects / Executables -->
+                <section class="break-inside-avoid">
+                    <div class="flex items-center gap-2 mb-8">
+                        <i class="fas fa-microchip text-neon-pink text-sm"></i>
+                        <h3 class="font-bold text-white text-xl uppercase tracking-wider print:text-black">./run_projects.exe</h3>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <!-- Project 1 -->
+                        <div class="cyber-card p-5 group print:border-gray-300">
+                            <div class="flex justify-between items-start mb-4">
+                                <div class="p-2 bg-neon-pink/10 text-neon-pink rounded-sm print:text-black print:border print:border-gray-300">
+                                    <i class="fas fa-server"></i>
+                                </div>
+                                <a href="#" class="text-xs hover:text-white text-gray-500 transition-colors print:text-black">[ VIEW_SOURCE ]</a>
+                            </div>
+                            <h4 class="text-xl font-bold text-white mb-2 group-hover:text-neon-pink transition-colors print:text-black">Auto-Scale Monitor</h4>
+                            <p class="text-xs text-gray-400 mb-4 leading-relaxed print:text-gray-700">
+                                Python-based daemon that monitors server load and triggers webhook alerts. Developed in 48 hours.
+                            </p>
+                            <div class="flex gap-2 text-[10px] uppercase font-bold tracking-wider">
+                                <span class="text-neon-pink border border-neon-pink/30 px-2 py-1 print:text-black print:border-gray-300">Python</span>
+                                <span class="text-neon-pink border border-neon-pink/30 px-2 py-1 print:text-black print:border-gray-300">AWS</span>
+                            </div>
+                        </div>
+
+                        <!-- Project 2 -->
+                        <div class="cyber-card p-5 group print:border-gray-300">
+                            <div class="flex justify-between items-start mb-4">
+                                <div class="p-2 bg-neon-cyan/10 text-neon-cyan rounded-sm print:text-black print:border print:border-gray-300">
+                                    <i class="fas fa-globe"></i>
+                                </div>
+                                <a href="#" class="text-xs hover:text-white text-gray-500 transition-colors print:text-black">[ LIVE_DEMO ]</a>
+                            </div>
+                            <h4 class="text-xl font-bold text-white mb-2 group-hover:text-neon-cyan transition-colors print:text-black">Cloud Dashboard</h4>
+                            <p class="text-xs text-gray-400 mb-4 leading-relaxed print:text-gray-700">
+                                Responsive visualizer for server health stats. Glassmorphism UI built with raw CSS/Grid.
+                            </p>
+                            <div class="flex gap-2 text-[10px] uppercase font-bold tracking-wider">
+                                <span class="text-neon-cyan border border-neon-cyan/30 px-2 py-1 print:text-black print:border-gray-300">HTML5</span>
+                                <span class="text-neon-cyan border border-neon-cyan/30 px-2 py-1 print:text-black print:border-gray-300">CSS3</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- RIGHT COLUMN (Sidebar / Stats) -->
+            <div class="lg:col-span-4 space-y-8">
+                
+                <!-- Skills Module -->
+                <div class="cyber-card p-6 border-t-4 border-t-neon-green print:border print:border-gray-300">
+                    <h3 class="text-sm font-bold text-gray-500 uppercase tracking-widest mb-6 print:text-black">
+                        <i class="fas fa-code mr-2"></i>Loaded_Modules
+                    </h3>
+                    
+                    <div class="space-y-6">
+                        <div>
+                            <div class="flex justify-between text-xs mb-2 text-neon-green print:text-black">
+                                <span>PYTHON</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="h-1 bg-gray-800 w-full print:bg-gray-200">
+                                <div class="h-full bg-neon-green w-[90%] shadow-[0_0_10px_rgba(0,255,65,0.5)] print:shadow-none print:bg-black"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between text-xs mb-2 text-neon-cyan print:text-black">
+                                <span>INFRASTRUCTURE</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="h-1 bg-gray-800 w-full print:bg-gray-200">
+                                <div class="h-full bg-neon-cyan w-[85%] shadow-[0_0_10px_rgba(0,243,255,0.5)] print:shadow-none print:bg-black"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between text-xs mb-2 text-neon-pink print:text-black">
+                                <span>WEB_DEV</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="h-1 bg-gray-800 w-full print:bg-gray-200">
+                                <div class="h-full bg-neon-pink w-[80%] shadow-[0_0_10px_rgba(255,0,255,0.5)] print:shadow-none print:bg-black"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-8 pt-6 border-t border-white/10 grid grid-cols-2 gap-2 print:border-gray-300">
+                        <div class="text-xs text-center p-2 bg-white/5 border border-white/10 hover:border-neon-green hover:text-neon-green transition-all cursor-crosshair print:text-black print:border-gray-300">
+                            AWS / GCP
+                        </div>
+                        <div class="text-xs text-center p-2 bg-white/5 border border-white/10 hover:border-neon-green hover:text-neon-green transition-all cursor-crosshair print:text-black print:border-gray-300">
+                            DOCKER
+                        </div>
+                        <div class="text-xs text-center p-2 bg-white/5 border border-white/10 hover:border-neon-green hover:text-neon-green transition-all cursor-crosshair print:text-black print:border-gray-300">
+                            BASH
+                        </div>
+                        <div class="text-xs text-center p-2 bg-white/5 border border-white/10 hover:border-neon-green hover:text-neon-green transition-all cursor-crosshair print:text-black print:border-gray-300">
+                            LINUX
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Vibe Coding Status -->
+                <div class="cyber-card p-6 border-t-4 border-t-neon-pink print:border print:border-gray-300">
+                    <h3 class="text-sm font-bold text-gray-500 uppercase tracking-widest mb-4 print:text-black">
+                        <i class="fas fa-bolt mr-2"></i>Workflow_State
+                    </h3>
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="text-3xl font-display font-bold text-white print:text-black">VIBE</div>
+                        <div class="flex-1 h-px bg-white/20 print:bg-black"></div>
+                        <div class="text-neon-pink font-bold text-xl print:text-black">ON</div>
+                    </div>
+                    <p class="text-xs text-gray-400 leading-relaxed mb-4 print:text-gray-700">
+                        Optimized for AI-assisted rapid development cycles. High velocity output with minimal friction.
+                    </p>
+                    <div class="flex gap-2">
+                        <span class="px-2 py-1 bg-neon-pink/10 text-neon-pink text-[10px] uppercase font-bold border border-neon-pink/20 print:text-black print:border-gray-300">Prototyping</span>
+                        <span class="px-2 py-1 bg-neon-pink/10 text-neon-pink text-[10px] uppercase font-bold border border-neon-pink/20 print:text-black print:border-gray-300">AI_Tools</span>
+                    </div>
+                </div>
+
+                <!-- Education (Compact) -->
+                <div class="cyber-card p-6 border-t-4 border-t-neon-cyan print:border print:border-gray-300">
+                    <h3 class="text-sm font-bold text-gray-500 uppercase tracking-widest mb-4 print:text-black">
+                        <i class="fas fa-graduation-cap mr-2"></i>Knowledge_Base
+                    </h3>
+                    <div class="mb-4">
+                        <div class="text-white font-bold print:text-black">B.Tech CompSci</div>
+                        <div class="text-xs text-gray-500 print:text-gray-600">University • 2011</div>
+                    </div>
+                    <div>
+                        <div class="text-white font-bold print:text-black">AWS Certified</div>
+                        <div class="text-xs text-gray-500 print:text-gray-600">Cloud Practitioner</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <footer class="mt-20 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center text-xs text-gray-600 font-mono print:mt-10 print:border-gray-300">
+            <div>
+                TERMINAL_SESSION_ID: <span class="text-gray-400">#8X99-2A</span>
+            </div>
+            <div class="mt-2 md:mt-0">
+                NO COPYRIGHT INTENDED. JUST CODE.
+            </div>
+        </footer>
+
+    </main>
+
+</body>
+</html>
