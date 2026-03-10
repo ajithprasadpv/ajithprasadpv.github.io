@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SYSTEM_STATUS: ONLINE // INFRA_ENG</title>
+    <title>AJITH_PRASAD // ANDROID_DEV</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700;800&family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
-    
+
     <script>
         tailwind.config = {
             theme: {
@@ -45,7 +45,7 @@
     <style>
         body {
             background-color: #050505;
-            background-image: 
+            background-image:
                 linear-gradient(rgba(0, 255, 65, 0.03) 1px, transparent 1px),
                 linear-gradient(90deg, rgba(0, 255, 65, 0.03) 1px, transparent 1px);
             background-size: 30px 30px;
@@ -77,43 +77,19 @@
             100% { transform: translate(0) }
         }
 
-        /* Scrollbar */
-        ::-webkit-scrollbar {
-            width: 10px;
-        }
-        ::-webkit-scrollbar-track {
-            background: #050505;
-            border-left: 1px solid #333;
-        }
-        ::-webkit-scrollbar-thumb {
-            background: #333;
-            border: 1px solid #00ff41;
-        }
-        ::-webkit-scrollbar-thumb:hover {
-            background: #00ff41;
-        }
+        .project-card:hover .project-icon { color: inherit; }
 
-        /* Print Styles */
+        ::-webkit-scrollbar { width: 10px; }
+        ::-webkit-scrollbar-track { background: #050505; border-left: 1px solid #333; }
+        ::-webkit-scrollbar-thumb { background: #333; border: 1px solid #00ff41; }
+        ::-webkit-scrollbar-thumb:hover { background: #00ff41; }
+
         @media print {
-            body { 
-                background: white !important; 
-                color: black !important; 
-                background-image: none !important;
-            }
+            body { background: white !important; color: black !important; background-image: none !important; }
             .no-print { display: none !important; }
-            .print-black { color: black !important; }
-            .cyber-card { 
-                border: 1px solid #ccc !important; 
-                box-shadow: none !important; 
-                background: white !important;
-                color: black !important;
-            }
+            .cyber-card { border: 1px solid #ccc !important; box-shadow: none !important; background: white !important; color: black !important; }
             * { text-shadow: none !important; }
-            .text-neon-green { color: #000 !important; }
-            .text-neon-cyan { color: #000 !important; }
-            .text-neon-pink { color: #000 !important; }
-            .bg-neon-green\/10 { background: transparent !important; }
-            .border-neon-green { border-color: #000 !important; }
+            .text-neon-green, .text-neon-cyan, .text-neon-pink { color: #000 !important; }
             a { text-decoration: underline; color: black !important; }
         }
     </style>
@@ -128,52 +104,52 @@
                     <span class="w-2 h-2 bg-neon-green rounded-full animate-blink"></span>
                     SYSTEM_ONLINE
                 </span>
-                <span class="text-gray-600 hidden sm:inline">V.2.0.24</span>
+                <span class="text-gray-600 hidden sm:inline">ANDROID_DEV :: BANGALORE</span>
             </div>
-            <div class="flex gap-4">
-                <button onclick="window.print()" class="hover:text-neon-green hover:bg-neon-green/10 px-2 py-1 transition-colors uppercase border border-transparent hover:border-neon-green">
-                    [ DOWNLOAD_LOGS.PDF ]
-                </button>
+            <div class="flex gap-4 text-xs">
+                <a href="https://github.com/ajithprasadpv" target="_blank" class="hover:text-neon-green transition-colors px-2 py-1 hover:bg-neon-green/10 border border-transparent hover:border-neon-green">[ GITHUB ]</a>
+                <a href="https://x.com/ajithprasad" target="_blank" class="hover:text-neon-cyan transition-colors px-2 py-1 hover:bg-neon-cyan/10 border border-transparent hover:border-neon-cyan">[ X.COM ]</a>
+                <a href="mailto:ajithprasadpv@gmail.com" class="hover:text-neon-pink transition-colors px-2 py-1 hover:bg-neon-pink/10 border border-transparent hover:border-neon-pink">[ CONTACT ]</a>
             </div>
         </div>
     </nav>
 
     <main class="max-w-6xl mx-auto px-4 pt-24 pb-20">
-        
-        <!-- Header / Hero -->
-        <header class="mb-20 print:mb-8 grid grid-cols-1 lg:grid-cols-12 gap-8 items-end">
+
+        <!-- Hero -->
+        <header class="mb-20 grid grid-cols-1 lg:grid-cols-12 gap-8 items-end">
             <div class="lg:col-span-8">
-                <div class="inline-block px-2 py-1 mb-4 text-xs font-bold tracking-widest text-black bg-neon-green border border-neon-green print:bg-transparent print:text-black print:border-black">
+                <div class="inline-block px-2 py-1 mb-4 text-xs font-bold tracking-widest text-black bg-neon-green border border-neon-green">
                     OPEN_FOR_WORK :: TRUE
                 </div>
-                <h1 class="text-5xl md:text-7xl font-display font-bold text-white mb-4 uppercase leading-none tracking-tighter mix-blend-difference glitch-text cursor-default print:text-black">
+                <h1 class="text-5xl md:text-7xl font-display font-bold text-white mb-4 uppercase leading-none tracking-tighter glitch-text cursor-default">
                     AJITH_PRASAD
                 </h1>
-                <h2 class="text-xl md:text-2xl text-neon-cyan font-bold tracking-tight print:text-black">
-                    <span class="text-gray-500 mr-2">></span>INFRASTRUCTURE_ENGINEER
+                <h2 class="text-xl md:text-2xl text-neon-cyan font-bold tracking-tight">
+                    <span class="text-gray-500 mr-2">></span>ANDROID_DEVELOPER
                 </h2>
-                <h2 class="text-xl md:text-2xl text-gray-500 font-mono mt-1 print:text-black">
-                    <span class="text-gray-600 mr-2">#</span>VIBE_CODING_SPECIALIST
+                <h2 class="text-xl md:text-2xl text-gray-500 font-mono mt-1">
+                    <span class="text-gray-600 mr-2">#</span>INDIE_APP_FOUNDER
                 </h2>
             </div>
-            
-            <!-- Contact Matrix -->
-            <div class="lg:col-span-4 cyber-card p-4 text-sm font-mono print:border-0 print:p-0">
-                <div class="border-b border-white/10 pb-2 mb-2 text-gray-500 text-xs uppercase tracking-widest">Connect_Protocols</div>
+
+            <!-- Connect -->
+            <div class="lg:col-span-4 cyber-card p-4 text-sm font-mono">
+                <div class="border-b border-white/10 pb-2 mb-3 text-gray-500 text-xs uppercase tracking-widest">Connect_Protocols</div>
                 <div class="flex flex-col gap-2">
-                    <a href="mailto:ajithprasadpv@gmail.com" class="flex justify-between items-center group hover:text-neon-pink transition-colors print:text-black">
+                    <a href="mailto:ajithprasadpv@gmail.com" class="flex justify-between items-center group hover:text-neon-pink transition-colors">
                         <span>EMAIL</span>
-                        <span class="text-gray-500 group-hover:text-neon-pink">> Send_Packet()</span>
+                        <span class="text-gray-500 group-hover:text-neon-pink text-xs">ajithprasadpv@gmail.com</span>
                     </a>
-                    <a href="https://github.com/ajithprasadpv" target="_blank" class="flex justify-between items-center group hover:text-neon-pink transition-colors print:text-black">
+                    <a href="https://github.com/ajithprasadpv" target="_blank" class="flex justify-between items-center group hover:text-neon-green transition-colors">
                         <span>GITHUB</span>
-                        <span class="text-gray-500 group-hover:text-neon-pink">> git pull</span>
+                        <span class="text-gray-500 group-hover:text-neon-green text-xs">ajithprasadpv</span>
                     </a>
-                    <a href="https://x.com/ajithprasad" target="_blank" class="flex justify-between items-center group hover:text-neon-pink transition-colors print:text-black">
+                    <a href="https://x.com/ajithprasad" target="_blank" class="flex justify-between items-center group hover:text-neon-cyan transition-colors">
                         <span>X.COM</span>
-                        <span class="text-gray-500 group-hover:text-neon-pink">> Follow()</span>
+                        <span class="text-gray-500 group-hover:text-neon-cyan text-xs">@ajithprasad</span>
                     </a>
-                    <div class="flex justify-between items-center text-gray-500 mt-2 pt-2 border-t border-white/10 print:hidden">
+                    <div class="flex justify-between items-center text-gray-600 mt-2 pt-2 border-t border-white/10">
                         <span>LOC</span>
                         <span>IN.Bangalore</span>
                     </div>
@@ -181,243 +157,276 @@
             </div>
         </header>
 
-        <!-- Main Grid Layout -->
+        <!-- Main Grid -->
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
-            
-            <!-- LEFT COLUMN (Main Content) -->
-            <div class="lg:col-span-8 flex flex-col gap-16 print:gap-8">
-                
-                <!-- About / Terminal Output -->
+
+            <!-- LEFT COLUMN -->
+            <div class="lg:col-span-8 flex flex-col gap-16">
+
+                <!-- About -->
                 <section>
                     <div class="flex items-center gap-2 mb-6">
                         <i class="fas fa-terminal text-neon-green text-sm"></i>
-                        <h3 class="font-bold text-white text-xl uppercase tracking-wider print:text-black">./cat about_me.txt</h3>
+                        <h3 class="font-bold text-white text-xl uppercase tracking-wider">./cat about_me.txt</h3>
                     </div>
-                    <div class="border-l-2 border-neon-green/30 pl-6 py-2 text-lg leading-relaxed text-gray-300 print:text-black print:border-gray-300">
+                    <div class="border-l-2 border-neon-green/30 pl-6 py-2 text-lg leading-relaxed text-gray-300">
                         <p class="mb-4">
-                            <span class="text-neon-green font-bold">root@user:~$</span> Forward-thinking engineer with 1 year of runtime executing robust system architecture.
+                            <span class="text-neon-green font-bold">root@ajith:~$</span> Indie Android developer building production-grade apps that real people use every day.
                         </p>
                         <p>
-                            Specializing in the intersection of reliable infrastructure and "Vibe Coding"—leveraging AI-assisted workflows to accelerate Python, HTML, and CSS deployment. My compiler flags are set to maximum efficiency. I automate the boring stuff so you don't have to.
+                            I design, build, and ship complete Android applications end-to-end — from architecture and UI to Play Store deployment. My stack is Kotlin + Jetpack Compose, and I care deeply about clean code, great UX, and apps that just work.
                         </p>
                     </div>
                 </section>
 
-                <!-- Experience / System Logs -->
+                <!-- Experience -->
                 <section>
                     <div class="flex items-center gap-2 mb-8">
                         <i class="fas fa-history text-neon-cyan text-sm"></i>
-                        <h3 class="font-bold text-white text-xl uppercase tracking-wider print:text-black">./view_logs --experience</h3>
+                        <h3 class="font-bold text-white text-xl uppercase tracking-wider">./view_logs --experience</h3>
                     </div>
-                    
-                    <div class="space-y-8">
-                        <!-- Role 1 -->
-                        <div class="cyber-card p-6 relative group print:shadow-none print:border-gray-300">
-                            <div class="absolute top-0 right-0 p-2 opacity-50 text-[10px] text-gray-500 uppercase tracking-widest border-b border-l border-white/10 bg-black/50 print:hidden">
-                                log_id: 2023_current
-                            </div>
-                            
-                            <div class="flex flex-col md:flex-row md:items-baseline justify-between mb-4 border-b border-white/10 pb-4 print:border-gray-300">
-                                <div>
-                                    <h4 class="text-2xl font-bold text-white group-hover:text-neon-green transition-colors print:text-black">Infrastructure Engineer</h4>
-                                    <h5 class="text-gray-400 print:text-gray-700">Tech_Corp_Systems_Ltd</h5>
-                                </div>
-                                <div class="font-mono text-neon-green bg-neon-green/10 px-2 py-1 text-xs mt-2 md:mt-0 print:text-black print:border print:border-gray-300">
-                                    [ 2023 - PRESENT ]
-                                </div>
-                            </div>
-                            
-                            <ul class="space-y-3 text-sm text-gray-400 font-mono print:text-black">
-                                <li class="flex gap-3">
-                                    <span class="text-neon-green">></span>
-                                    <span>Maintained cloud uptime at <span class="text-white bg-white/10 px-1 print:text-black">99.9%</span> via automated health checks.</span>
-                                </li>
-                                <li class="flex gap-3">
-                                    <span class="text-neon-green">></span>
-                                    <span>Scripted routine maintenance in <strong class="text-white print:text-black">Python</strong>, reducing manual ops by 40%.</span>
-                                </li>
-                                <li class="flex gap-3">
-                                    <span class="text-neon-green">></span>
-                                    <span>Refactored legacy CI/CD pipelines for accelerated deployment velocity.</span>
-                                </li>
-                            </ul>
-                        </div>
 
-                        <!-- Role 2 -->
-                        <div class="cyber-card p-6 relative group print:shadow-none print:border-gray-300">
-                            <div class="absolute top-0 right-0 p-2 opacity-50 text-[10px] text-gray-500 uppercase tracking-widest border-b border-l border-white/10 bg-black/50 print:hidden">
-                                log_id: 2022_2023
-                            </div>
-                            
-                            <div class="flex flex-col md:flex-row md:items-baseline justify-between mb-4 border-b border-white/10 pb-4 print:border-gray-300">
-                                <div>
-                                    <h4 class="text-2xl font-bold text-white group-hover:text-neon-cyan transition-colors print:text-black">Junior Developer</h4>
-                                    <h5 class="text-gray-400 print:text-gray-700">Startup_Inc</h5>
-                                </div>
-                                <div class="font-mono text-gray-500 border border-gray-700 px-2 py-1 text-xs mt-2 md:mt-0 print:text-black print:border-gray-300">
-                                    [ 2022 - 2023 ]
-                                </div>
-                            </div>
-                            
-                            <ul class="space-y-3 text-sm text-gray-400 font-mono print:text-black">
-                                <li class="flex gap-3">
-                                    <span class="text-neon-cyan">></span>
-                                    <span>Frontend architecture using HTML5/CSS3.</span>
-                                </li>
-                                <li class="flex gap-3">
-                                    <span class="text-neon-cyan">></span>
-                                    <span>Pioneered "Vibe Coding" methods using AI tools for rapid prototyping.</span>
-                                </li>
-                            </ul>
+                    <div class="cyber-card p-6 relative group">
+                        <div class="absolute top-0 right-0 p-2 opacity-50 text-[10px] text-gray-500 uppercase tracking-widest border-b border-l border-white/10 bg-black/50 no-print">
+                            log_id: 2024_present
                         </div>
+                        <div class="flex flex-col md:flex-row md:items-baseline justify-between mb-4 border-b border-white/10 pb-4">
+                            <div>
+                                <h4 class="text-2xl font-bold text-white group-hover:text-neon-green transition-colors">Indie Android Developer</h4>
+                                <h5 class="text-gray-400">Founder &amp; Solo Engineer</h5>
+                            </div>
+                            <div class="font-mono text-neon-green bg-neon-green/10 px-2 py-1 text-xs mt-2 md:mt-0">
+                                [ 2024 – PRESENT ]
+                            </div>
+                        </div>
+                        <ul class="space-y-3 text-sm text-gray-400 font-mono">
+                            <li class="flex gap-3">
+                                <span class="text-neon-green">></span>
+                                <span>Designed, built, and shipped <span class="text-white">3 Android apps</span> to Google Play — each with thousands of installs.</span>
+                            </li>
+                            <li class="flex gap-3">
+                                <span class="text-neon-green">></span>
+                                <span>Built <span class="text-white">Soundmark</span>, an AI-powered ambient music SaaS for commercial venues, serving 100K+ venues.</span>
+                            </li>
+                            <li class="flex gap-3">
+                                <span class="text-neon-green">></span>
+                                <span>Full ownership across the stack: <span class="text-white">architecture → UI → backend → deployment → marketing.</span></span>
+                            </li>
+                            <li class="flex gap-3">
+                                <span class="text-neon-green">></span>
+                                <span>Implemented Firebase Auth, Firestore, MVVM, Hilt DI, and Jetpack Compose across production apps.</span>
+                            </li>
+                        </ul>
                     </div>
                 </section>
 
-                <!-- Projects / Executables -->
-                <section class="break-inside-avoid">
+                <!-- Projects -->
+                <section>
                     <div class="flex items-center gap-2 mb-8">
                         <i class="fas fa-microchip text-neon-pink text-sm"></i>
-                        <h3 class="font-bold text-white text-xl uppercase tracking-wider print:text-black">./run_projects.exe</h3>
+                        <h3 class="font-bold text-white text-xl uppercase tracking-wider">./run_projects.exe</h3>
                     </div>
-                    
+
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <!-- Project 1 -->
-                        <div class="cyber-card p-5 group print:border-gray-300">
+
+                        <!-- Wedzy -->
+                        <div class="cyber-card p-5 group project-card">
                             <div class="flex justify-between items-start mb-4">
-                                <div class="p-2 bg-neon-pink/10 text-neon-pink rounded-sm print:text-black print:border print:border-gray-300">
-                                    <i class="fas fa-server"></i>
+                                <div class="p-2 bg-neon-pink/10 text-neon-pink rounded-sm text-lg">💍</div>
+                                <div class="flex gap-2">
+                                    <a href="https://play.google.com/store/apps/details?id=com.ajith.wedzy" target="_blank" class="text-xs hover:text-neon-pink text-gray-500 transition-colors border border-gray-700 hover:border-neon-pink px-2 py-1">[ PLAY STORE ]</a>
+                                    <a href="https://github.com/ajithprasadpv/wedzy-showcase" target="_blank" class="text-xs hover:text-white text-gray-500 transition-colors border border-gray-700 hover:border-white px-2 py-1">[ REPO ]</a>
                                 </div>
-                                <a href="#" class="text-xs hover:text-white text-gray-500 transition-colors print:text-black">[ VIEW_SOURCE ]</a>
                             </div>
-                            <h4 class="text-xl font-bold text-white mb-2 group-hover:text-neon-pink transition-colors print:text-black">Auto-Scale Monitor</h4>
-                            <p class="text-xs text-gray-400 mb-4 leading-relaxed print:text-gray-700">
-                                Python-based daemon that monitors server load and triggers webhook alerts. Developed in 48 hours.
+                            <h4 class="text-xl font-bold text-white mb-1 group-hover:text-neon-pink transition-colors">Wedzy</h4>
+                            <p class="text-xs text-neon-pink/60 mb-2 uppercase tracking-wider">Wedding Planner App</p>
+                            <p class="text-xs text-gray-400 mb-4 leading-relaxed">
+                                Full-featured wedding planner with task management, budget tracker, guest list, vendor directory, and inspiration gallery. Firebase-powered with complete user data isolation.
                             </p>
-                            <div class="flex gap-2 text-[10px] uppercase font-bold tracking-wider">
-                                <span class="text-neon-pink border border-neon-pink/30 px-2 py-1 print:text-black print:border-gray-300">Python</span>
-                                <span class="text-neon-pink border border-neon-pink/30 px-2 py-1 print:text-black print:border-gray-300">AWS</span>
+                            <div class="flex flex-wrap gap-2 text-[10px] uppercase font-bold tracking-wider">
+                                <span class="text-neon-pink border border-neon-pink/30 px-2 py-1">Kotlin</span>
+                                <span class="text-neon-pink border border-neon-pink/30 px-2 py-1">Compose</span>
+                                <span class="text-neon-pink border border-neon-pink/30 px-2 py-1">Firebase</span>
+                                <span class="text-neon-pink border border-neon-pink/30 px-2 py-1">Hilt</span>
                             </div>
                         </div>
 
-                        <!-- Project 2 -->
-                        <div class="cyber-card p-5 group print:border-gray-300">
+                        <!-- Pathika PDF -->
+                        <div class="cyber-card p-5 group project-card">
                             <div class="flex justify-between items-start mb-4">
-                                <div class="p-2 bg-neon-cyan/10 text-neon-cyan rounded-sm print:text-black print:border print:border-gray-300">
-                                    <i class="fas fa-globe"></i>
+                                <div class="p-2 bg-neon-cyan/10 text-neon-cyan rounded-sm text-lg">📄</div>
+                                <div class="flex gap-2">
+                                    <a href="https://play.google.com/store/apps/details?id=io.pathika.pdfviewer" target="_blank" class="text-xs hover:text-neon-cyan text-gray-500 transition-colors border border-gray-700 hover:border-neon-cyan px-2 py-1">[ PLAY STORE ]</a>
+                                    <a href="https://github.com/ajithprasadpv/pathika-pdf-showcase" target="_blank" class="text-xs hover:text-white text-gray-500 transition-colors border border-gray-700 hover:border-white px-2 py-1">[ REPO ]</a>
                                 </div>
-                                <a href="#" class="text-xs hover:text-white text-gray-500 transition-colors print:text-black">[ LIVE_DEMO ]</a>
                             </div>
-                            <h4 class="text-xl font-bold text-white mb-2 group-hover:text-neon-cyan transition-colors print:text-black">Cloud Dashboard</h4>
-                            <p class="text-xs text-gray-400 mb-4 leading-relaxed print:text-gray-700">
-                                Responsive visualizer for server health stats. Glassmorphism UI built with raw CSS/Grid.
+                            <h4 class="text-xl font-bold text-white mb-1 group-hover:text-neon-cyan transition-colors">Pathika PDF</h4>
+                            <p class="text-xs text-neon-cyan/60 mb-2 uppercase tracking-wider">Clean PDF Viewer</p>
+                            <p class="text-xs text-gray-400 mb-4 leading-relaxed">
+                                Minimalist, ad-free PDF viewer with night mode, pinch-to-zoom, thumbnail filmstrip, bookmarks, and zero internet permissions. Privacy-first design.
                             </p>
-                            <div class="flex gap-2 text-[10px] uppercase font-bold tracking-wider">
-                                <span class="text-neon-cyan border border-neon-cyan/30 px-2 py-1 print:text-black print:border-gray-300">HTML5</span>
-                                <span class="text-neon-cyan border border-neon-cyan/30 px-2 py-1 print:text-black print:border-gray-300">CSS3</span>
+                            <div class="flex flex-wrap gap-2 text-[10px] uppercase font-bold tracking-wider">
+                                <span class="text-neon-cyan border border-neon-cyan/30 px-2 py-1">Kotlin</span>
+                                <span class="text-neon-cyan border border-neon-cyan/30 px-2 py-1">Compose</span>
+                                <span class="text-neon-cyan border border-neon-cyan/30 px-2 py-1">Room</span>
+                                <span class="text-neon-cyan border border-neon-cyan/30 px-2 py-1">DataStore</span>
                             </div>
                         </div>
+
+                        <!-- Telepromptly -->
+                        <div class="cyber-card p-5 group project-card">
+                            <div class="flex justify-between items-start mb-4">
+                                <div class="p-2 bg-neon-green/10 text-neon-green rounded-sm text-lg">🎬</div>
+                                <div class="flex gap-2">
+                                    <a href="https://play.google.com/store/apps/details?id=com.cipherkloud.telepromptly" target="_blank" class="text-xs hover:text-neon-green text-gray-500 transition-colors border border-gray-700 hover:border-neon-green px-2 py-1">[ PLAY STORE ]</a>
+                                    <a href="https://github.com/ajithprasadpv/telepromptly-showcase" target="_blank" class="text-xs hover:text-white text-gray-500 transition-colors border border-gray-700 hover:border-white px-2 py-1">[ REPO ]</a>
+                                </div>
+                            </div>
+                            <h4 class="text-xl font-bold text-white mb-1 group-hover:text-neon-green transition-colors">Telepromptly</h4>
+                            <p class="text-xs text-neon-green/60 mb-2 uppercase tracking-wider">Floating Teleprompter</p>
+                            <p class="text-xs text-gray-400 mb-4 leading-relaxed">
+                                Professional floating teleprompter overlay that works with any camera app. Adjustable speed, mirror mode, custom fonts, and unlimited script management.
+                            </p>
+                            <div class="flex flex-wrap gap-2 text-[10px] uppercase font-bold tracking-wider">
+                                <span class="text-neon-green border border-neon-green/30 px-2 py-1">Kotlin</span>
+                                <span class="text-neon-green border border-neon-green/30 px-2 py-1">Compose</span>
+                                <span class="text-neon-green border border-neon-green/30 px-2 py-1">WindowManager</span>
+                                <span class="text-neon-green border border-neon-green/30 px-2 py-1">Hilt</span>
+                            </div>
+                        </div>
+
+                        <!-- Soundmark -->
+                        <div class="cyber-card p-5 group project-card">
+                            <div class="flex justify-between items-start mb-4">
+                                <div class="p-2 bg-neon-pink/10 text-neon-pink rounded-sm text-lg">🎵</div>
+                                <div class="flex gap-2">
+                                    <a href="https://www.soundmark.com.co" target="_blank" class="text-xs hover:text-neon-pink text-gray-500 transition-colors border border-gray-700 hover:border-neon-pink px-2 py-1">[ WEBSITE ]</a>
+                                    <a href="https://github.com/ajithprasadpv/soundmark-showcase" target="_blank" class="text-xs hover:text-white text-gray-500 transition-colors border border-gray-700 hover:border-white px-2 py-1">[ REPO ]</a>
+                                </div>
+                            </div>
+                            <h4 class="text-xl font-bold text-white mb-1 group-hover:text-neon-pink transition-colors">Soundmark</h4>
+                            <p class="text-xs text-neon-pink/60 mb-2 uppercase tracking-wider">AI Ambient Music · SaaS</p>
+                            <p class="text-xs text-gray-400 mb-4 leading-relaxed">
+                                Real-time AI-powered ambient music generation for commercial venues. Multi-venue dashboard, smart scheduling, deep analytics. SOC 2 / GDPR compliant. 100K+ venues.
+                            </p>
+                            <div class="flex flex-wrap gap-2 text-[10px] uppercase font-bold tracking-wider">
+                                <span class="text-neon-pink border border-neon-pink/30 px-2 py-1">Android TV</span>
+                                <span class="text-neon-pink border border-neon-pink/30 px-2 py-1">SaaS</span>
+                                <span class="text-neon-pink border border-neon-pink/30 px-2 py-1">AI/ML</span>
+                                <span class="text-neon-pink border border-neon-pink/30 px-2 py-1">Web</span>
+                            </div>
+                        </div>
+
                     </div>
                 </section>
+
             </div>
 
-            <!-- RIGHT COLUMN (Sidebar / Stats) -->
+            <!-- RIGHT COLUMN -->
             <div class="lg:col-span-4 space-y-8">
-                
-                <!-- Skills Module -->
-                <div class="cyber-card p-6 border-t-4 border-t-neon-green print:border print:border-gray-300">
-                    <h3 class="text-sm font-bold text-gray-500 uppercase tracking-widest mb-6 print:text-black">
+
+                <!-- Skills -->
+                <div class="cyber-card p-6 border-t-4 border-t-neon-green">
+                    <h3 class="text-sm font-bold text-gray-500 uppercase tracking-widest mb-6">
                         <i class="fas fa-code mr-2"></i>Loaded_Modules
                     </h3>
-                    
-                    <div class="space-y-6">
+                    <div class="space-y-5">
                         <div>
-                            <div class="flex justify-between text-xs mb-2 text-neon-green print:text-black">
-                                <span>PYTHON</span>
-                                <span>90%</span>
+                            <div class="flex justify-between text-xs mb-2 text-neon-green">
+                                <span>KOTLIN</span><span>95%</span>
                             </div>
-                            <div class="h-1 bg-gray-800 w-full print:bg-gray-200">
-                                <div class="h-full bg-neon-green w-[90%] shadow-[0_0_10px_rgba(0,255,65,0.5)] print:shadow-none print:bg-black"></div>
+                            <div class="h-1 bg-gray-800 w-full">
+                                <div class="h-full bg-neon-green w-[95%] shadow-[0_0_10px_rgba(0,255,65,0.5)]"></div>
                             </div>
                         </div>
                         <div>
-                            <div class="flex justify-between text-xs mb-2 text-neon-cyan print:text-black">
-                                <span>INFRASTRUCTURE</span>
-                                <span>85%</span>
+                            <div class="flex justify-between text-xs mb-2 text-neon-cyan">
+                                <span>JETPACK_COMPOSE</span><span>90%</span>
                             </div>
-                            <div class="h-1 bg-gray-800 w-full print:bg-gray-200">
-                                <div class="h-full bg-neon-cyan w-[85%] shadow-[0_0_10px_rgba(0,243,255,0.5)] print:shadow-none print:bg-black"></div>
+                            <div class="h-1 bg-gray-800 w-full">
+                                <div class="h-full bg-neon-cyan w-[90%] shadow-[0_0_10px_rgba(0,243,255,0.5)]"></div>
                             </div>
                         </div>
                         <div>
-                            <div class="flex justify-between text-xs mb-2 text-neon-pink print:text-black">
-                                <span>WEB_DEV</span>
-                                <span>80%</span>
+                            <div class="flex justify-between text-xs mb-2 text-neon-pink">
+                                <span>FIREBASE</span><span>88%</span>
                             </div>
-                            <div class="h-1 bg-gray-800 w-full print:bg-gray-200">
-                                <div class="h-full bg-neon-pink w-[80%] shadow-[0_0_10px_rgba(255,0,255,0.5)] print:shadow-none print:bg-black"></div>
+                            <div class="h-1 bg-gray-800 w-full">
+                                <div class="h-full bg-neon-pink w-[88%] shadow-[0_0_10px_rgba(255,0,255,0.5)]"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between text-xs mb-2 text-neon-green">
+                                <span>MVVM_CLEAN_ARCH</span><span>85%</span>
+                            </div>
+                            <div class="h-1 bg-gray-800 w-full">
+                                <div class="h-full bg-neon-green w-[85%] shadow-[0_0_10px_rgba(0,255,65,0.5)]"></div>
                             </div>
                         </div>
                     </div>
-
-                    <div class="mt-8 pt-6 border-t border-white/10 grid grid-cols-2 gap-2 print:border-gray-300">
-                        <div class="text-xs text-center p-2 bg-white/5 border border-white/10 hover:border-neon-green hover:text-neon-green transition-all cursor-crosshair print:text-black print:border-gray-300">
-                            AWS / GCP
-                        </div>
-                        <div class="text-xs text-center p-2 bg-white/5 border border-white/10 hover:border-neon-green hover:text-neon-green transition-all cursor-crosshair print:text-black print:border-gray-300">
-                            DOCKER
-                        </div>
-                        <div class="text-xs text-center p-2 bg-white/5 border border-white/10 hover:border-neon-green hover:text-neon-green transition-all cursor-crosshair print:text-black print:border-gray-300">
-                            BASH
-                        </div>
-                        <div class="text-xs text-center p-2 bg-white/5 border border-white/10 hover:border-neon-green hover:text-neon-green transition-all cursor-crosshair print:text-black print:border-gray-300">
-                            LINUX
-                        </div>
+                    <div class="mt-8 pt-6 border-t border-white/10 grid grid-cols-2 gap-2">
+                        <div class="text-xs text-center p-2 bg-white/5 border border-white/10 hover:border-neon-green hover:text-neon-green transition-all cursor-crosshair">HILT / DI</div>
+                        <div class="text-xs text-center p-2 bg-white/5 border border-white/10 hover:border-neon-green hover:text-neon-green transition-all cursor-crosshair">ROOM DB</div>
+                        <div class="text-xs text-center p-2 bg-white/5 border border-white/10 hover:border-neon-green hover:text-neon-green transition-all cursor-crosshair">COROUTINES</div>
+                        <div class="text-xs text-center p-2 bg-white/5 border border-white/10 hover:border-neon-green hover:text-neon-green transition-all cursor-crosshair">FLOW</div>
+                        <div class="text-xs text-center p-2 bg-white/5 border border-white/10 hover:border-neon-green hover:text-neon-green transition-all cursor-crosshair">MATERIAL 3</div>
+                        <div class="text-xs text-center p-2 bg-white/5 border border-white/10 hover:border-neon-green hover:text-neon-green transition-all cursor-crosshair">COIL</div>
+                        <div class="text-xs text-center p-2 bg-white/5 border border-white/10 hover:border-neon-green hover:text-neon-green transition-all cursor-crosshair">DATASTORE</div>
+                        <div class="text-xs text-center p-2 bg-white/5 border border-white/10 hover:border-neon-green hover:text-neon-green transition-all cursor-crosshair">NAV COMPOSE</div>
                     </div>
                 </div>
 
-                <!-- Vibe Coding Status -->
-                <div class="cyber-card p-6 border-t-4 border-t-neon-pink print:border print:border-gray-300">
-                    <h3 class="text-sm font-bold text-gray-500 uppercase tracking-widest mb-4 print:text-black">
-                        <i class="fas fa-bolt mr-2"></i>Workflow_State
+                <!-- Stats -->
+                <div class="cyber-card p-6 border-t-4 border-t-neon-pink">
+                    <h3 class="text-sm font-bold text-gray-500 uppercase tracking-widest mb-6">
+                        <i class="fas fa-bolt mr-2"></i>Runtime_Stats
                     </h3>
-                    <div class="flex items-center gap-4 mb-4">
-                        <div class="text-3xl font-display font-bold text-white print:text-black">VIBE</div>
-                        <div class="flex-1 h-px bg-white/20 print:bg-black"></div>
-                        <div class="text-neon-pink font-bold text-xl print:text-black">ON</div>
-                    </div>
-                    <p class="text-xs text-gray-400 leading-relaxed mb-4 print:text-gray-700">
-                        Optimized for AI-assisted rapid development cycles. High velocity output with minimal friction.
-                    </p>
-                    <div class="flex gap-2">
-                        <span class="px-2 py-1 bg-neon-pink/10 text-neon-pink text-[10px] uppercase font-bold border border-neon-pink/20 print:text-black print:border-gray-300">Prototyping</span>
-                        <span class="px-2 py-1 bg-neon-pink/10 text-neon-pink text-[10px] uppercase font-bold border border-neon-pink/20 print:text-black print:border-gray-300">AI_Tools</span>
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-center border-b border-white/10 pb-3">
+                            <span class="text-gray-400 text-sm">Apps_Shipped</span>
+                            <span class="text-neon-green font-bold text-2xl font-display">4</span>
+                        </div>
+                        <div class="flex justify-between items-center border-b border-white/10 pb-3">
+                            <span class="text-gray-400 text-sm">Play_Store_Apps</span>
+                            <span class="text-neon-cyan font-bold text-2xl font-display">3</span>
+                        </div>
+                        <div class="flex justify-between items-center border-b border-white/10 pb-3">
+                            <span class="text-gray-400 text-sm">Venues_on_Soundmark</span>
+                            <span class="text-neon-pink font-bold text-xl font-display">100K+</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-400 text-sm">Status</span>
+                            <span class="text-neon-green text-xs font-bold border border-neon-green px-2 py-1 animate-pulse">BUILDING</span>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Education (Compact) -->
-                <div class="cyber-card p-6 border-t-4 border-t-neon-cyan print:border print:border-gray-300">
-                    <h3 class="text-sm font-bold text-gray-500 uppercase tracking-widest mb-4 print:text-black">
+                <!-- Education -->
+                <div class="cyber-card p-6 border-t-4 border-t-neon-cyan">
+                    <h3 class="text-sm font-bold text-gray-500 uppercase tracking-widest mb-4">
                         <i class="fas fa-graduation-cap mr-2"></i>Knowledge_Base
                     </h3>
                     <div class="mb-4">
-                        <div class="text-white font-bold print:text-black">B.Tech CompSci</div>
-                        <div class="text-xs text-gray-500 print:text-gray-600">University • 2011</div>
+                        <div class="text-white font-bold">B.Tech — Computer Science</div>
+                        <div class="text-xs text-gray-500 mt-1">University · 2011</div>
                     </div>
-                    <div>
-                        <div class="text-white font-bold print:text-black">AWS Certified</div>
-                        <div class="text-xs text-gray-500 print:text-gray-600">Cloud Practitioner</div>
+                    <div class="pt-4 border-t border-white/10">
+                        <div class="text-white font-bold">Android Development</div>
+                        <div class="text-xs text-gray-500 mt-1">Self-taught · Production apps in Play Store</div>
                     </div>
                 </div>
 
             </div>
         </div>
 
-        <footer class="mt-20 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center text-xs text-gray-600 font-mono print:mt-10 print:border-gray-300">
+        <footer class="mt-20 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center text-xs text-gray-600 font-mono">
             <div>
-                TERMINAL_SESSION_ID: <span class="text-gray-400">#8X99-2A</span>
+                AJITH_PRASAD_PV &nbsp;::&nbsp; <span class="text-gray-500">BANGALORE, INDIA</span>
             </div>
-            <div class="mt-2 md:mt-0">
-                NO COPYRIGHT INTENDED. JUST CODE.
+            <div class="mt-2 md:mt-0 flex gap-4">
+                <a href="mailto:ajithprasadpv@gmail.com" class="hover:text-neon-green transition-colors">ajithprasadpv@gmail.com</a>
+                <span class="text-gray-700">|</span>
+                <a href="https://x.com/ajithprasad" target="_blank" class="hover:text-neon-cyan transition-colors">@ajithprasad</a>
             </div>
         </footer>
 
